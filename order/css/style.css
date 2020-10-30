@@ -1,0 +1,35 @@
+.container {
+    width: 600px;
+    border: 5px solid black;
+    margin: 30px auto;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    /* justify-content: space-evenly; flex-start,flex-end,space between,space-around,space-evendly */
+    align-items: baseline;
+}
+
+.container div {    
+    width: 120px;
+    height: 120px;
+    background-color: #21b6f1;
+    margin: 2px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.container div.satu {
+    order: 2;
+}
+
+.container div.dua {
+    order: 3;
+}
+
+.container div.tiga {
+    order: 4;
+}
+
+.container div.empat {
+    order: 1;
+}
