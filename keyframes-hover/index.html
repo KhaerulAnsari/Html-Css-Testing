@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin-bottom: 20px;
+            
+        }
+
+        .satu:hover {
+            animation: animasiKotak 2s ease 2;
+        }
+
+        .dua:hover {
+            animation: animasiKotak 2s ease infinite;
+        }
+
+        .tiga:hover {
+            animation-name: animasiKotak;
+            animation-duration: 2s;
+            animation-timing-funtion: ease;
+            animation-iteration-count: infinite;
+        }
+
+        .empat {
+            animation: animasiKotak 2s ease 2 reverse;
+        }
+
+        .lima:hover {
+            animation: animasiKotak 2s ease 2 alternate;
+        }
+
+        .enam:hover {
+            animation: animasiKotak 2s ease 2 alternate-reverse;
+        }
+
+        .tujuh:hover {
+            animation: animasiKotak 2s ease 3 alternate forwards ;
+        }
+
+        @keyframes animasiKotak {
+            from {
+                width: 200px;
+            }
+            
+            50% {
+                width: 500px;
+                height: 200px;
+            }
+
+            to {
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="kotak satu"></div>
+    <div class="kotak dua"></div>
+    <div class="kotak tiga"></div>
+    <div class="kotak empat"></div>
+    <div class="kotak lima"></div>
+    <div class="kotak enam"></div>
+    <div class="kotak tujuh"></div>
+</body>
+</html>

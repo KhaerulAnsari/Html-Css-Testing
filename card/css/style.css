@@ -1,0 +1,105 @@
+.container {
+    width: 80%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .5),
+                -3px -3px 8px  rgba(0, 0, 0, .5);
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px 70px;
+  
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.card-head {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.card-head img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-head .blur {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    transition: .3s;
+   
+}
+
+.card-head .blur h3 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.card-head .blur ul {
+   margin-top: 40px;
+}
+
+.card-head .blur li {
+    display: inline;
+    padding: 17px;
+}
+
+.card-head .blur a {
+    color: white;
+    font-size: 20px;
+}
+
+.card-head .blur a:hover {
+    color: #14a5ff; 
+}
+
+.card-head:hover .blur {
+   opacity: 0.5;
+}
+
+.card-body {
+    padding: 5px 20px;
+}
+
+.card-body a {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #14a5ff;
+    color: white;
+   
+    transition: .4s;
+}
+
+.card-body a:hover {
+    background-color: #0562ed;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        padding: 10px 20px;
+        height: 2000px;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

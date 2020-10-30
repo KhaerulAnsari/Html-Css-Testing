@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+
+        @font-face {
+            font-family: 'alex_brushregular';
+            src: url('alexbrush-regular-webfont.woff2') format('woff2'),
+                url('alexbrush-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+        img {
+            display: block;
+            margin: 50px auto;
+            -webkit-filter: blur(3px) brightness(50%);
+            filter: blur(3px) brightness(50%);
+        }
+
+        .beda {
+            -webkit-filter: drop-shadow(5px 5px 5px black);
+            filter: drop-shadow(5px 5px 5px black);
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            -webkit-filter: drop-shadow(5px 5px 5px black);;
+            filter: drop-shadow(5px 5px 5px black);
+            font-family: 'alex_brushregular',arial;
+        }
+    </style>
+</head>
+<body>
+    <img src="testing.jpg" alt="image">
+
+    <img src="testing.jpg" alt="" class="beda">
+
+    <h1>Gambar Testing Drop Shadaw</h1>
+</body>
+</html>

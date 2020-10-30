@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfrom</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        body{
+            height: 3000px;
+        }
+
+        /* Penulisan Transform
+        scale(angka),scaleX(angka),scaleY(angka)
+        rotate(deg),rotateX(deg),rotateY(deg)
+        skew(deg),skewX(deg),skewY(deg)
+        translate(px),translateX(px),translateY(px)
+        */
+
+
+        .satu {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+        }
+
+        .satu:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+            border-radius: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            background-color: skyblue;
+            color: white;
+            display: block;
+            width: 100px;
+            transition: 1s;
+            border-radius: 3px;
+            margin: 0px auto;
+            text-align: center;
+        }
+        a:hover{
+            transform: scale(1.1);
+            box-shadaw: 5px 5px 7px rgba(0,0,0,0.9);
+            transition: 0.8s;
+        }
+
+       .dua{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+       } 
+
+       .dua:hover{
+            transform: rotate(5deg);
+            transition: 1s;
+            box-shadow: 5px 5px 5px black;
+            border-radius: 5px;
+        }
+
+        .tiga{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+       } 
+
+       .tiga:hover{
+            transform: skew(30deg);
+            transition: 1s;
+            box-shadow: 5px 5px 5px black;
+            border-radius: 5px;
+        }
+
+        .empat{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            transition: 1s;
+       } 
+
+       .empat:hover{
+            transform: translate(50px, -50px); /* kekanan 50px kebawah 100px*/
+            transition: 1s;
+            box-shadow: 5px 5px 5px black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak satu"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestiae ab molestias quaerat dicta deserunt sint iusto praesentium laudantium soluta eum architecto sunt accusamus voluptatem, ut aspernatur aliquid ullam incidunt!</p>
+
+    <a href="#">Read More</a>
+    <div class="kotak dua"></div>
+    <div class="kotak tiga"></div>
+    <div class="kotak empat"></div>
+</body>
+</html>
